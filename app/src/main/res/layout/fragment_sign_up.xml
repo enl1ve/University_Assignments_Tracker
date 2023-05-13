@@ -13,7 +13,7 @@
         android:layout_height="wrap_content">
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/emailTextInput"
+            android:id="@+id/titleTextInput"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:hint="@string/field_email"
@@ -24,7 +24,7 @@
             app:layout_constraintBottom_toTopOf="@id/usernameTextInput">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/emailEditText"
+                android:id="@+id/titleEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:lines="1"
@@ -42,8 +42,8 @@
             app:layout_constraintVertical_chainStyle="packed"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/emailTextInput"
-            app:layout_constraintBottom_toTopOf="@id/passwordTextInput">
+            app:layout_constraintTop_toBottomOf="@id/titleTextInput"
+            app:layout_constraintBottom_toTopOf="@id/subjectTextInput">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/usernameEditText"
@@ -56,7 +56,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/passwordTextInput"
+            android:id="@+id/subjectTextInput"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:hint="@string/field_password"
@@ -67,7 +67,7 @@
             app:layout_constraintBottom_toTopOf="@id/repeatPasswordTextInput">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/passwordEditText"
+                android:id="@+id/subjectEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:lines="1"
@@ -83,7 +83,7 @@
             android:layout_marginTop="@dimen/medium_space"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/passwordTextInput"
+            app:layout_constraintTop_toBottomOf="@id/subjectTextInput"
             app:layout_constraintBottom_toTopOf="@id/createAccountButton">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -107,15 +107,6 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@id/repeatPasswordTextInput"
             app:layout_constraintBottom_toBottomOf="parent" />
-
-        <ProgressBar
-            android:id="@+id/progressBar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/medium_space"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/createAccountButton"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
