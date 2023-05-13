@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">University_Assignments_Tracker</string>
+    <string name="field_email">Email</string>
+    <string name="field_username">Username</string>
+    <string name="field_password">Password</string>
+    <string name="field_repeat_password">Repeat Password</string>
+    <string name="action_create_account">Create Account</string>
+    <string name="action_sign_in">Sign In</string>
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
