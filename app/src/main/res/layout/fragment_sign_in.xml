@@ -42,7 +42,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@id/titleTextInput"
-            app:layout_constraintBottom_toTopOf="@id/taskSaveButton">
+            app:layout_constraintBottom_toTopOf="@id/signInButton">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/subjectEditText"
@@ -55,7 +55,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
-            android:id="@+id/taskSaveButton"
+            android:id="@+id/signInButton"
             style="@style/GlobalTextInputStyle.Big"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -64,16 +64,16 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@id/subjectTextInput"
-            app:layout_constraintBottom_toTopOf="@id/taskCancelButton"/>
+            app:layout_constraintBottom_toTopOf="@id/signUpButton"/>
 
         <Button
-            android:id="@+id/taskCancelButton"
+            android:id="@+id/signUpButton"
             style="@style/GlobalTextInputStyle.Secondary.Big"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/taskSaveButton"
+            app:layout_constraintTop_toBottomOf="@id/signInButton"
             app:layout_constraintBottom_toBottomOf="parent"
             android:text="@string/action_create_account"/>
 
@@ -84,7 +84,7 @@
             android:visibility="gone"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/taskCancelButton"/>
+            app:layout_constraintTop_toBottomOf="@id/signUpButton"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

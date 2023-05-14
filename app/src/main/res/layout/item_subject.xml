@@ -20,7 +20,7 @@
         android:id="@+id/teacherTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Evgen Vovk"
+        android:text="Ivan Ivanov"
         android:textSize="@dimen/small_text_size"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/titleTextView" />
@@ -44,6 +44,7 @@
         android:layout_marginTop="@dimen/small_text_size"
         android:gravity="fill_horizontal"
         android:textColor="@android:color/black"
+        android:text="Some description..."
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/teacherTextView" />

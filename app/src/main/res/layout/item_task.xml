@@ -43,7 +43,7 @@
         android:layout_marginTop="14sp"
         android:gravity="fill_horizontal"
         android:textColor="@android:color/black"
-        android:text="Бебирнки..."
+        android:text="Some description..."
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/subjectTextView" />

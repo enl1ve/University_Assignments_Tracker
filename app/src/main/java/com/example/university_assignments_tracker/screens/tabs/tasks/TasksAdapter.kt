@@ -8,21 +8,21 @@ import com.example.university_assignments_tracker.databinding.ItemTaskBinding
 import java.text.SimpleDateFormat
 import java.util.*
 
-typealias TaskUpdateListener = (task: Task) -> Unit
+//typealias TaskUpdateListener = (task: Task) -> Unit
 
 class TasksAdapter(
-    private val updateListener: TaskUpdateListener
+    //private val updateListener: TaskUpdateListener
 ) : RecyclerView.Adapter<TasksAdapter.TasksViewHolder>(), View.OnClickListener {
 
-    var tasks: List<Task> = emptyList()
-        set(newValue) {
-            field = newValue
-            notifyDataSetChanged()
-        }
+//    var tasks: List<Task> = emptyList()
+//        set(newValue) {
+//            field = newValue
+//            notifyDataSetChanged()
+//        }
 
     override fun onClick(v : View) {
-        val subject = v.tag as Task
-        updateListener.invoke(subject)
+//        val subject = v.tag as Task
+//        updateListener.invoke(subject)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TasksViewHolder {
@@ -34,18 +34,18 @@ class TasksAdapter(
         return TasksViewHolder(binding)
     }
 
-    override fun getItemCount(): Int = tasks.size
+    override fun getItemCount(): Int = 5
 
     override fun onBindViewHolder(holder: TasksViewHolder, position: Int) {
-        val task = tasks[position]
-        with(holder.binding) {
-            titleTextView.text = task.title
-            subjectTextView.text = task.subject
-            rateTextView.text = task.rate
-            statusTextView.text = task.status
-            deadlineTextView.text = SimpleDateFormat("dd MMMM yyyy", Locale.getDefault()).format(Date(task.deadline))
-            descriptionTextView.text = task.description
-        }
+//        val task = tasks[position]
+//        with(holder.binding) {
+//            titleTextView.text = task.title
+//            subjectTextView.text = task.subject
+//            rateTextView.text = task.rate
+//            statusTextView.text = task.status
+//            deadlineTextView.text = SimpleDateFormat("dd MMMM yyyy", Locale.getDefault()).format(Date(task.deadline))
+//            descriptionTextView.text = task.description
+//        }
     }
 
     class TasksViewHolder (

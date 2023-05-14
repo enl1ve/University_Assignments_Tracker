@@ -6,21 +6,21 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.university_assignments_tracker.databinding.ItemSubjectBinding
 
-typealias SubjectDeleteListener = (subject: Subject) -> Unit
+//typealias SubjectDeleteListener = (subject: Subject) -> Unit
 
 class SubjectsAdapter(
-    private val deleteListener: SubjectDeleteListener
+    //private val deleteListener: SubjectDeleteListener
 ) : RecyclerView.Adapter<SubjectsAdapter.SubjectsViewHolder>(), View.OnClickListener {
 
-    var subjects: List<Subject> = emptyList()
-        set(newValue) {
-            field = newValue
-            notifyDataSetChanged()
-        }
+//    var subjects: List<Subject> = emptyList()
+//        set(newValue) {
+//            field = newValue
+//            notifyDataSetChanged()
+//        }
 
     override fun onClick(v : View) {
-        val subject = v.tag as Subject
-        deleteListener.invoke(subject)
+//        val subject = v.tag as Subject
+//        deleteListener.invoke(subject)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SubjectsViewHolder {
@@ -32,18 +32,18 @@ class SubjectsAdapter(
         return SubjectsViewHolder(binding)
     }
 
-    override fun getItemCount(): Int = subjects.size
+    override fun getItemCount(): Int = 5
 
     override fun onBindViewHolder(holder: SubjectsViewHolder, position: Int) {
-        val subject = subjects[position]
-        with(holder.binding) {
-            deleteImageViewButton.tag = subject
-
-            titleTextView.text = subject.title
-            teacherTextView.text = subject.teacher
-            totalRateTextView.text = subject.totalrate
-            descriptionTextView.text = subject.description
-        }
+//        val subject = subjects[position]
+//        with(holder.binding) {
+//            deleteImageViewButton.tag = subject
+//
+//            titleTextView.text = subject.title
+//            teacherTextView.text = subject.teacher
+//            totalRateTextView.text = subject.totalrate
+//            descriptionTextView.text = subject.description
+//        }
     }
 
     class SubjectsViewHolder (
