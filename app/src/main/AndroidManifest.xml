@@ -12,7 +12,7 @@
         android:theme="@style/Theme.University_Assignments_Tracker"
         tools:targetApi="31">
         <activity
-            android:name=".screens.MainActivity"
+            android:name=".screens.SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

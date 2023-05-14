@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
-    tools:context=".screens.tabs.tasks.EditTaskFragment">
+    tools:context=".screens.tabs.subjects.AddSubjectFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -21,7 +21,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toTopOf="@id/subjectTextInput">
+            app:layout_constraintBottom_toTopOf="@id/teacherTextInput">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/titleEditText"
@@ -34,10 +34,10 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/subjectTextInput"
+            android:id="@+id/teacherTextInput"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="@string/field_subject"
+            android:hint="@string/field_teacher"
             android:layout_marginTop="@dimen/medium_space"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -62,8 +62,8 @@
             android:layout_marginTop="@dimen/medium_space"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/subjectTextInput"
-            app:layout_constraintBottom_toTopOf="@id/deadlineTextInput">
+            app:layout_constraintTop_toBottomOf="@id/teacherTextInput"
+            app:layout_constraintBottom_toTopOf="@id/descriptionTextInput">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/rateEditText"
@@ -76,27 +76,6 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/deadlineTextInput"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="@string/field_deadline"
-            android:layout_marginTop="@dimen/medium_space"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/rateTextInput"
-            app:layout_constraintBottom_toTopOf="@id/descriptionTextInput">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/deadlineEditText"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:lines="1"
-                android:inputType="date"
-                android:imeOptions="actionNext" />
-
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/descriptionTextInput"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -104,8 +83,8 @@
             android:layout_marginTop="@dimen/medium_space"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/deadlineTextInput"
-            app:layout_constraintBottom_toTopOf="@id/statusChoose">
+            app:layout_constraintTop_toBottomOf="@id/rateTextInput"
+            app:layout_constraintBottom_toTopOf="@id/taskSaveButton">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/descriptionEditText"
@@ -117,29 +96,6 @@
 
         </com.google.android.material.textfield.TextInputLayout>
 
-        <LinearLayout
-            android:id="@+id/statusChoose"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/medium_space"
-            android:orientation="horizontal"
-            app:layout_constraintBottom_toTopOf="@+id/taskSaveButton"
-            app:layout_constraintStart_toStartOf="@+id/descriptionTextInput"
-            app:layout_constraintTop_toBottomOf="@id/descriptionTextInput">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/text_status" />
-
-            <Spinner
-                android:id="@+id/spinner"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-
-        </LinearLayout>
-
-
         <Button
             android:id="@+id/taskSaveButton"
             style="@style/GlobalTextInputStyle.Big"
@@ -149,7 +105,7 @@
             android:layout_marginTop="@dimen/large_space"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/statusChoose"
+            app:layout_constraintTop_toBottomOf="@id/descriptionTextInput"
             app:layout_constraintBottom_toTopOf="@id/taskCancelButton"/>
 
         <Button
@@ -162,17 +118,6 @@
             app:layout_constraintTop_toBottomOf="@id/taskSaveButton"
             app:layout_constraintBottom_toBottomOf="parent"
             android:text="@string/action_cancel"/>
-
-        <ImageView
-            android:id="@+id/deleteImageViewButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="?android:attr/selectableItemBackgroundBorderless"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/taskCancelButton"
-            app:srcCompat="@drawable/ic_delete" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

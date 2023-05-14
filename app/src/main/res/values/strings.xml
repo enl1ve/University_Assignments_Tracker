@@ -21,4 +21,9 @@
     <string name="field_description">Description</string>
     <string name="action_add">Add</string>
     <string name="text_status">Status:</string>
+    <string name="field_teacher">Teacher</string>
+    <string name="please_wait">Please wait...</string>
+    <string name="profile">Profile</string>
+    <string name="tasks">Tasks</string>
+    <string name="subjects">Subjects</string>
 </resources>

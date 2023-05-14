@@ -64,10 +64,10 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@id/subjectTextInput"
-            app:layout_constraintBottom_toTopOf="@id/signUpButton"/>
+            app:layout_constraintBottom_toTopOf="@id/taskCancelButton"/>
 
         <Button
-            android:id="@+id/signUpButton"
+            android:id="@+id/taskCancelButton"
             style="@style/GlobalTextInputStyle.Secondary.Big"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -84,7 +84,7 @@
             android:visibility="gone"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/signUpButton"/>
+            app:layout_constraintTop_toBottomOf="@id/taskCancelButton"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
