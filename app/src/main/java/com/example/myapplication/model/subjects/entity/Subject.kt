@@ -1,6 +1,6 @@
 package com.example.myapplication.model.subjects.entity
 
-data class Subject (
+data class Subject(
     val id: Long,
     val name: String,
     val description: String,
@@ -9,6 +9,10 @@ data class Subject (
         ){
 
     companion object {
+        fun get(): Any {
+            return Subject
+        }
+
         const val UNKNOWN_CREATED_AT = 0L
     }
 
